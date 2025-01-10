@@ -1,7 +1,13 @@
-export default function Home() {
+import { getContacts } from "./actions";
+import { ContactsTable } from "@/components/contacts-table";
+
+export default async function Home() {
+  const contacts = await getContacts();
+
   return (
-    <>
-      <h1>Hello World</h1>
-    </>
+    <div className="p-8">
+      <h1 className="text-2xl font-bold mb-4">Contactos</h1>
+      <ContactsTable contacts={contacts} />
+    </div>
   );
 }
