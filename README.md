@@ -1,52 +1,82 @@
-# Next.js & NextUI Template
+# Holded Next.js Dashboard
 
-This is a template for creating applications using Next.js 14 (app directory) and NextUI (v2).
+A modern dashboard application for Holded API integration, built with Next.js and NextUI. This project demonstrates the implementation of a business management interface using modern web development practices.
 
-[Try it on CodeSandbox](https://githubbox.com/nextui-org/next-app-template)
+## Tech Stack
 
-## Technologies Used
+- **Framework:** [Next.js 15](https://nextjs.org/docs/getting-started)
+- **UI Components:** [NextUI v2](https://nextui.org/)
+- **Styling:** [Tailwind CSS](https://tailwindcss.com/)
+- **Variants:** [Tailwind Variants](https://tailwind-variants.org)
+- **Language:** [TypeScript](https://www.typescriptlang.org/)
+- **Animations:** [Framer Motion](https://www.framer.com/motion/)
+- **Theme Switching:** [next-themes](https://github.com/pacocoursey/next-themes)
+- **Business API:** [Holded API](https://developers.holded.com/reference/overview)
 
-- [Next.js 14](https://nextjs.org/docs/getting-started)
-- [NextUI v2](https://nextui.org/)
-- [Tailwind CSS](https://tailwindcss.com/)
-- [Tailwind Variants](https://tailwind-variants.org)
-- [TypeScript](https://www.typescriptlang.org/)
-- [Framer Motion](https://www.framer.com/motion/)
-- [next-themes](https://github.com/pacocoursey/next-themes)
+## Getting Started
 
-## How to Use
-
-### Use the template with create-next-app
-
-To create a new project based on this template using `create-next-app`, run the following command:
-
+1. Clone the repository:
 ```bash
-npx create-next-app -e https://github.com/nextui-org/next-app-template
+git clone <your-repo-url>
+cd holded-nextjs
 ```
 
-### Install dependencies
-
-You can use one of them `npm`, `yarn`, `pnpm`, `bun`, Example using `npm`:
-
+2. Install dependencies:
+You can use `npm`, `yarn`, `pnpm`, or `bun`. Example using `npm`:
 ```bash
 npm install
 ```
 
-### Run the development server
+3. Install Holded API Client:
+```bash
+npm run install:holded
+```
 
+4. Run the development server:
 ```bash
 npm run dev
 ```
 
-### Setup pnpm (optional)
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-If you are using `pnpm`, you need to add the following code to your `.npmrc` file:
+## Available Commands
+
+- `npm run dev` - Start development server with Turbopack
+- `npm run build` - Create production build
+- `npm run start` - Start production server
+- `npm run lint` - Run linting checks
+- `npm run install:holded` - Install Holded API client
+
+## Project Structure
+
+```
+app/              # Next.js app directory
+components/       # React components
+types/           # TypeScript type definitions
+.api/            # API integrations
+config/          # Configuration files
+styles/          # Global styles
+```
+
+## Features
+
+- 🌓 Dark/Light mode support
+- 📱 Responsive design
+- ⚡ Fast page loads with Next.js
+- 🎨 Modern UI with NextUI
+- 📝 TypeScript for type safety
+- 🔄 Holded API integration
+- 🎯 Business management interface
+
+## Setup pnpm (optional)
+
+If you are using `pnpm`, add the following to your `.npmrc` file:
 
 ```bash
 public-hoist-pattern[]=*@nextui-org/*
 ```
 
-After modifying the `.npmrc` file, you need to run `pnpm install` again to ensure that the dependencies are installed correctly.
+After modifying the `.npmrc` file, run `pnpm install` again to ensure correct dependency installation.
 
 ## License
 
