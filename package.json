@@ -5,10 +5,10 @@
 	"scripts": {
 		"dev": "next dev --turbopack",
 		"build": "next build",
-		"vercel-build": "yes | npx api install \"@holded/v1.0#2tq2om5ntgl42\" --language=typescript && next build",
+		"vercel-build": "npx api install -l ts -y \"@holded/v1.0#2tq2om5ntgl42\" && next build",
 		"start": "next start",
 		"lint": "eslint . --ext .ts,.tsx -c .eslintrc.json --fix",
-		"install:holded": "yes | npx api install \"@holded/v1.0#2tq2om5ntgl42\" --language=typescript"
+		"install:holded": "npx api install -l ts -y \"@holded/v1.0#2tq2om5ntgl42\""
 	},
 	"dependencies": {
 		"@nextui-org/button": "2.2.8",
