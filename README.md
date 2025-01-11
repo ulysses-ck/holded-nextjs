@@ -44,7 +44,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 For deploying to Vercel, add the following command to your build settings:
 
 ```bash
-npx api install -l ts -y @holded/v1.0#2tq2om5ntgl42 && pnpm install --no-frozen-lockfile
+pnpm install --no-frozen-lockfile && npx api install -l ts -y @holded/v1.0#2tq2om5ntgl42
 ```
 
 This will ensure the Holded API client is properly installed during the build process.
