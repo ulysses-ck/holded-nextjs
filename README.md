@@ -41,13 +41,19 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ## Vercel Deployment
 
-For deploying to Vercel, add the following command to your build settings:
+For deploying to Vercel, configure the following commands in your build settings:
 
+Install Command:
 ```bash
-npx api install -l ts -y @holded/v1.0#2tq2om5ntgl42 && pnpm install --no-frozen-lockfile
+pnpm install --no-frozen-lockfile && cd .api/apis/holded && npm install && cd ../../..
 ```
 
-This will ensure the Holded API client is properly installed during the build process.
+Build Command:
+```bash
+next build
+```
+
+These commands ensure that both the main project dependencies and the versioned Holded API client dependencies are properly installed before building.
 
 ## Available Commands
 
