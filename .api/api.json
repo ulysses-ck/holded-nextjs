@@ -1,0 +1,11 @@
+{
+  "version": "1.0",
+  "apis": [
+    {
+      "identifier": "holded",
+      "source": "@holded/v1.0#2tq2om5ntgl42",
+      "integrity": "sha512-8qj7BGJVJw0vZlBRKI1WXuRkyIchl+OzWy9gT5dim/niIF5dtzOG2+3hB54cjfqVvyiKJnFf9hh2pkv0BvgKGA==",
+      "installerVersion": "6.1.2"
+    }
+  ]
+}
