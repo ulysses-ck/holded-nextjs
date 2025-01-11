@@ -5,10 +5,10 @@
 	"scripts": {
 		"dev": "next dev --turbopack",
 		"build": "next build",
-		"vercel-build": "npx api install \"@holded/v1.0#2tq2om5ntgl42\" && next build",
+		"vercel-build": "yes | npx api install \"@holded/v1.0#2tq2om5ntgl42\" --language=typescript && next build",
 		"start": "next start",
 		"lint": "eslint . --ext .ts,.tsx -c .eslintrc.json --fix",
-		"install:holded": "npx api install \"@holded/v1.0#2tq2om5ntgl42\""
+		"install:holded": "yes | npx api install \"@holded/v1.0#2tq2om5ntgl42\" --language=typescript"
 	},
 	"dependencies": {
 		"@nextui-org/button": "2.2.8",
@@ -25,7 +25,6 @@
 		"@nextui-org/theme": "2.4.4",
 		"@react-aria/ssr": "3.9.7",
 		"@react-aria/visually-hidden": "3.8.18",
-		"api": "^6.1.2",
 		"clsx": "2.1.1",
 		"framer-motion": "11.13.1",
 		"intl-messageformat": "^10.5.0",
