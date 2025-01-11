@@ -1,6 +1,8 @@
 import { getContacts } from "./actions";
 import { ContactsTable } from "@/components/contacts-table";
 
+export const revalidate = 60;
+
 export default async function Home() {
   const contacts = await getContacts();
 
