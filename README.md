@@ -39,6 +39,16 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+## Vercel Deployment
+
+For deploying to Vercel, add the following command to your build settings:
+
+```bash
+npx api install -l ts -y @holded/v1.0#2tq2om5ntgl42 && pnpm install --no-frozen-lockfile
+```
+
+This will ensure the Holded API client is properly installed during the build process.
+
 ## Available Commands
 
 - `npm run dev` - Start development server with Turbopack
