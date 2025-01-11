@@ -6,7 +6,7 @@ import type { ListContactsResponse200 } from "@/.api/apis/holded/types";
 
 export async function getContacts(): Promise<Contact[]> {
   try {
-    holded.auth("964f48473d755069d293cd3227d935b1");
+    holded.auth(process.env.HOLDED_API_KEY as string);
     const contacts = await holded.listContacts();
     
     return contacts.data
